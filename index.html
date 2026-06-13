@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha_Grow_Creation | Premium Digital Agency</title>
+    <link rel="icon" type="image/png" href="assets/logo.jpeg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>A</text></svg>'">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+
+    <!-- Premium Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-bg"></div>
+        <div class="loader-content">
+            <div class="loader-logo-wrapper">
+                <img src="assets/logo.png" alt="Logo" class="loader-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="fallback-logo" style="display:none;">A_G_C</div>
+            </div>
+            <div class="loader-glow"></div>
+            <h1 class="loader-title">Alpha_Grow_Creation</h1>
+            <p class="loader-subtitle">We Build Websites That Grow Businesses</p>
+            <div class="loader-progress">
+                <span id="loader-percentage">0</span>%
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="mouse-follower-glow"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Background Animations (Aurora, Mesh, Particles) -->
+    <div class="global-bg">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+        <div class="noise-overlay"></div>
+        <div class="particles-container" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="brand">
+                <img src="assets/logo.png" alt="Alpha_Grow_Creation Logo" class="nav-logo" onerror="this.style.display='none';">
+                <span>Alpha_Grow_Creation</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="magnetic nav-anchor" data-strength="20">Home</a></li>
+                <li><a href="#services" class="magnetic nav-anchor" data-strength="20">Services</a></li>
+                <li><a href="#portfolio" class="magnetic nav-anchor" data-strength="20">Portfolio</a></li>
+                <li><a href="#pricing" class="magnetic nav-anchor" data-strength="20">Pricing</a></li>
+                <li><a href="#calculator" class="magnetic nav-anchor" data-strength="20">Calculator</a></li>
+                <li><a href="#faq" class="magnetic nav-anchor" data-strength="20">FAQ</a></li>
+                <li><a href="#contact" class="magnetic nav-anchor" data-strength="20">Contact</a></li>
+            </ul>
+            <div class="hamburger magnetic" data-strength="50">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content wrapper for Lenis -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Hero Section (Horizontal Layout) -->
+            <section id="home" class="hero section-viewport">
+                <div class="hero-container container">
+                    <div class="hero-content">
+                        <h1 class="hero-headline split-text">
+                            <span>Build.</span><br>
+                            <span>Grow.</span><br>
+                            <span class="gradient-text">Dominate.</span>
+                        </h1>
+                        
+                        <p class="hero-tagline reveal-up delay-1">We Build Websites That Grow Businesses</p>
+                        
+                        <p class="hero-desc reveal-up delay-1">
+                            Elevating digital experiences through Apple-inspired minimalism, cinematic animations, and premium glassmorphism. Partner with us to transform your vision into an award-winning reality.
+                        </p>
+                        
+                        <div class="hero-cta-group reveal-up delay-2">
+                            <a href="#contact" class="btn btn-primary magnetic nav-anchor" data-strength="60">
+                                <span class="btn-text">Get Started</span>
+                                <div class="btn-glow"></div>
+                            </a>
+                            <a href="#portfolio" class="btn btn-outline magnetic nav-anchor" data-strength="40">
+                                <span class="btn-text">View Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visuals reveal-up delay-2">
+                        <div class="hero-stats-grid">
+                            <div class="counter-box glass-premium tilt-card">
+                                <h3 class="counter" data-target="120">0</h3><span>+</span>
+                                <p>Projects</p>
+                            </div>
+                            <div class="counter-box glass-premium tilt-card" style="transform: translateY(30px);">
+                                <h3 class="counter" data-target="50">0</h3><span>+</span>
+                                <p>Clients</p>
+                            </div>
+                            <div class="counter-box glass-premium tilt-card" style="transform: translateY(-20px);">
+                                <h3 class="counter" data-target="4">0</h3><span>+</span>
+                                <p>Services</p>
+                            </div>
+                            <div class="counter-box glass-premium tilt-card" style="transform: translateY(10px);">
+                                <h3>24/7</h3>
+                                <p>Support</p>
+                            </div>
+                        </div>
+                        <div class="hero-glow-orb"></div>
+                    </div>
+                </div>
+                
+                <div class="scroll-down-indicator magnetic" data-strength="30">
+                    <div class="mouse-icon"></div>
+                    <span>Scroll to explore</span>
+                </div>
+            </section>
+
+            <!-- Infinite Marquee Section -->
+            <section class="marquee-section">
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <span>WEB DEVELOPMENT</span> <i class="ph-fill ph-star-four"></i>
+                        <span>LANDING PAGES</span> <i class="ph-fill ph-star-four"></i>
+                        <span>E-COMMERCE</span> <i class="ph-fill ph-star-four"></i>
+                        <span>SOCIAL MEDIA</span> <i class="ph-fill ph-star-four"></i>
+                        <span>VIDEO EDITING</span> <i class="ph-fill ph-star-four"></i>
+                        <span>BRAND GROWTH</span> <i class="ph-fill ph-star-four"></i>
+                    </div>
+                    <div class="marquee-content" aria-hidden="true">
+                        <span>WEB DEVELOPMENT</span> <i class="ph-fill ph-star-four"></i>
+                        <span>LANDING PAGES</span> <i class="ph-fill ph-star-four"></i>
+                        <span>E-COMMERCE</span> <i class="ph-fill ph-star-four"></i>
+                        <span>SOCIAL MEDIA</span> <i class="ph-fill ph-star-four"></i>
+                        <span>VIDEO EDITING</span> <i class="ph-fill ph-star-four"></i>
+                        <span>BRAND GROWTH</span> <i class="ph-fill ph-star-four"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="services section-padding">
+                <div class="container">
+                    <div class="section-header reveal-up">
+                        <h2 class="section-title">Our Expertise</h2>
+                        <p class="section-subtitle">Premium solutions tailored for exceptional growth.</p>
+                    </div>
+                    
+                    <div class="services-grid">
+                        <div class="service-card glass-premium tilt-card reveal-up">
+                            <div class="card-glow"></div>
+                            <div class="s-icon"><i class="ph ph-browsers"></i></div>
+                            <h3>Website Development</h3>
+                            <ul class="s-features">
+                                <li>Responsive</li>
+                                <li>Modern</li>
+                                <li>SEO Friendly</li>
+                            </ul>
+                            <div class="s-price">₹10,499</div>
+                            <a href="#contact" class="s-btn magnetic nav-anchor" data-strength="20">Learn More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+
+                        <div class="service-card glass-premium tilt-card reveal-up" style="transition-delay: 0.1s;">
+                            <div class="card-glow"></div>
+                            <div class="s-icon"><i class="ph ph-rocket-launch"></i></div>
+                            <h3>Landing Pages</h3>
+                            <ul class="s-features">
+                                <li>Conversion optimized</li>
+                                <li>Fast</li>
+                                <li>Premium UI</li>
+                            </ul>
+                            <div class="s-price">₹4,199</div>
+                            <a href="#contact" class="s-btn magnetic nav-anchor" data-strength="20">Learn More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+
+                        <div class="service-card glass-premium tilt-card reveal-up" style="transition-delay: 0.2s;">
+                            <div class="card-glow"></div>
+                            <div class="s-icon"><i class="ph ph-shopping-bag"></i></div>
+                            <h3>E-Commerce Website</h3>
+                            <ul class="s-features">
+                                <li>Modern store</li>
+                                <li>Cart & Checkout</li>
+                                <li>Responsive</li>
+                            </ul>
+                            <div class="s-price">₹7,999</div>
+                            <a href="#contact" class="s-btn magnetic nav-anchor" data-strength="20">Learn More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+
+                        <div class="service-card glass-premium tilt-card reveal-up">
+                            <div class="card-glow"></div>
+                            <div class="s-icon"><i class="ph ph-instagram-logo"></i></div>
+                            <h3>Social Media Marketing</h3>
+                            <ul class="s-features">
+                                <li>Instagram Management</li>
+                                <li>8 Posters</li>
+                                <li>4 Reels</li>
+                            </ul>
+                            <div class="s-price">₹8,499<span>/mo</span></div>
+                            <a href="#contact" class="s-btn magnetic nav-anchor" data-strength="20">Learn More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+
+                        <div class="service-card glass-premium tilt-card reveal-up" style="transition-delay: 0.1s;">
+                            <div class="card-glow"></div>
+                            <div class="s-icon"><i class="ph ph-video-camera"></i></div>
+                            <h3>Reels Editing</h3>
+                            <ul class="s-features">
+                                <li>Script + Shoot: ₹2,599</li>
+                                <li>Only editing: ₹899</li>
+                            </ul>
+                            <div class="s-price">Starts at ₹899</div>
+                            <a href="#contact" class="s-btn magnetic nav-anchor" data-strength="20">Learn More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+
+                        <div class="service-card glass-premium tilt-card reveal-up" style="transition-delay: 0.2s;">
+                            <div class="card-glow"></div>
+                            <div class="s-icon"><i class="ph ph-image"></i></div>
+                            <h3>Poster Editing</h3>
+                            <ul class="s-features">
+                                <li>Premium graphics</li>
+                                <li>Brand aligned</li>
+                                <li>Fast delivery</li>
+                            </ul>
+                            <div class="s-price">₹299</div>
+                            <a href="#contact" class="s-btn magnetic nav-anchor" data-strength="20">Learn More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section (Modified for Live Previews) -->
+            <section id="portfolio" class="portfolio section-padding">
+                <div class="container">
+                    <div class="section-header reveal-up">
+                        <h2 class="section-title">Our Works</h2>
+                        <p class="section-subtitle">A showcase of our premium digital experiences.</p>
+                    </div>
+
+                    <div class="portfolio-masonry">
+                        
+                        <!-- Project 1 -->
+                        <div class="port-item glass-premium tilt-card reveal-up">
+                            <div class="port-img-wrap">
+                                <div class="shine"></div>
+                                <img src="assets/port_leo_cafe_1781324444296.png" alt="Leo Cafe Preview" class="port-live-preview">
+                            </div>
+                            <div class="port-info">
+                                <span class="p-category">Restaurant</span>
+                                <h3>Leo Cafe</h3>
+                                <p>Premium cafe website with elegant UI.</p>
+                                <a href="https://leocafeonline.netlify.app/" target="_blank" class="port-btn magnetic" data-strength="30">Visit Website <i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="port-item glass-premium tilt-card reveal-up">
+                            <div class="port-img-wrap">
+                                <div class="shine"></div>
+                                <img src="assets/port_meenatchi_1781324462023.png" alt="Meenatchi Store Preview" class="port-live-preview">
+                            </div>
+                            <div class="port-info">
+                                <span class="p-category">E-Commerce</span>
+                                <h3>Meenatchi Store</h3>
+                                <p>Modern robust online store.</p>
+                                <a href="https://meenatchi-store.onrender.com/" target="_blank" class="port-btn magnetic" data-strength="30">Visit Website <i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="port-item glass-premium tilt-card reveal-up">
+                            <div class="port-img-wrap">
+                                <div class="shine"></div>
+                                <img src="assets/port_spotify_1781324475629.png" alt="Spotify Clone Preview" class="port-live-preview">
+                            </div>
+                            <div class="port-info">
+                                <span class="p-category">Web App</span>
+                                <h3>Spotify Clone</h3>
+                                <p>Complex music player interface.</p>
+                                <a href="https://harishh.neocities.org/spotify/" target="_blank" class="port-btn magnetic" data-strength="30">Visit Website <i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="port-item glass-premium tilt-card reveal-up">
+                            <div class="port-img-wrap">
+                                <div class="shine"></div>
+                                <img src="assets/port_customer_1781324491639.png" alt="Portfolio Preview" class="port-live-preview">
+                            </div>
+                            <div class="port-info">
+                                <span class="p-category">Agency</span>
+                                <h3>Portfolio Website</h3>
+                                <p>Creative agency showcase.</p>
+                                <a href="https://harishh.neocities.org/portfolio/port/p" target="_blank" class="port-btn magnetic" data-strength="30">Visit Website <i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 (Owner Portfolio - Live Preview) -->
+                        <div class="port-item glass-premium tilt-card reveal-up">
+                            <div class="port-img-wrap">
+                                <div class="shine"></div>
+                                <img src="https://image.thum.io/get/width/800/crop/800/https://portfolio-benzzz.netlify.app/" alt="Owner Portfolio Preview" class="port-live-preview">
+                            </div>
+                            <div class="port-info">
+                                <span class="p-category">Personal</span>
+                                <h3>Owner Portfolio</h3>
+                                <p>Minimalist developer portfolio.</p>
+                                <a href="https://portfolio-benzzz.netlify.app/" target="_blank" class="port-btn magnetic" data-strength="30">Visit Website <i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <div class="port-item glass-premium tilt-card reveal-up">
+                            <div class="port-img-wrap">
+                                <div class="shine"></div>
+                                <img src="assets/port_smartcrop_1781324505722.png" alt="SmartCrop Preview" class="port-live-preview">
+                            </div>
+                            <div class="port-info">
+                                <span class="p-category">Agri-Tech</span>
+                                <h3>SmartCrop</h3>
+                                <p>Agricultural dashboard platform.</p>
+                                <a href="https://smartcrop-final.vercel.app/" target="_blank" class="port-btn magnetic" data-strength="30">Visit Website <i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 7 -->
+                        <div class="port-item glass-premium tilt-card reveal-up span-full">
+                            <div class="port-img-wrap">
+                                <div class="shine"></div>
+                                <img src="assets/port_ironempire_1781324520833.png" alt="Iron Empire Fitness Preview" class="port-live-preview ironempire-img">
+                            </div>
+                            <div class="port-info">
+                                <span class="p-category">Fitness</span>
+                                <h3>Iron Empire Fitness</h3>
+                                <p>High-energy premium gym website driving membership signups.</p>
+                                <a href="https://ironempirefitness.in/" target="_blank" class="port-btn magnetic" data-strength="30">Visit Website <i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section (Unified Styling) -->
+            <section id="pricing" class="pricing section-padding">
+                <div class="container">
+                    <div class="section-header reveal-up">
+                        <h2 class="section-title">Transparent Pricing</h2>
+                        <p class="section-subtitle">Invest in digital assets that multiply your ROI.</p>
+                    </div>
+
+                    <div class="pricing-grid">
+                        
+                        <div class="price-card glass-premium reveal-up">
+                            <div class="animated-border"></div>
+                            <h3>Landing Page</h3>
+                            <div class="pr-amt">₹4,199</div>
+                            <p class="price-desc">High-converting responsive landing page.</p>
+                            <a href="#contact" class="btn btn-outline w-full magnetic nav-anchor" data-strength="30">Select Plan</a>
+                        </div>
+
+                        <div class="price-card glass-premium reveal-up" style="transition-delay: 0.1s;">
+                            <div class="animated-border"></div>
+                            <h3>Website Development</h3>
+                            <div class="pr-amt">₹10,499</div>
+                            <p class="price-desc">Complete responsive business website with modern UI.</p>
+                            <a href="#contact" class="btn btn-outline w-full magnetic nav-anchor" data-strength="30">Select Plan</a>
+                        </div>
+
+                        <div class="price-card glass-premium reveal-up" style="transition-delay: 0.2s;">
+                            <div class="animated-border"></div>
+                            <h3>E-Commerce</h3>
+                            <div class="pr-amt">₹7,999</div>
+                            <p class="price-desc">Professional online shopping website with modern design.</p>
+                            <a href="#contact" class="btn btn-outline w-full magnetic nav-anchor" data-strength="30">Select Plan</a>
+                        </div>
+
+                        <div class="price-card glass-premium reveal-up" style="transition-delay: 0.3s;">
+                            <div class="animated-border"></div>
+                            <h3>Social Media Marketing</h3>
+                            <div class="pr-amt">₹8,499<span>/mo</span></div>
+                            <ul class="sm-inc-list">
+                                <li><i class="ph ph-check-circle"></i> Instagram Management</li>
+                                <li><i class="ph ph-check-circle"></i> 8 Posters</li>
+                                <li><i class="ph ph-check-circle"></i> 4 Reels</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline w-full magnetic nav-anchor" data-strength="30">Select Plan</a>
+                        </div>
+
+                        <div class="price-card glass-premium span-2 reveal-up" style="transition-delay: 0.4s;">
+                            <div class="animated-border"></div>
+                            <h3>Media Editing</h3>
+                            <div class="media-flex">
+                                <div class="m-item">
+                                    <h4>Script + Shoot + Edit</h4>
+                                    <div class="m-price">₹2,599</div>
+                                    <p>Complete production including scripting, shooting, editing, and delivery.</p>
+                                </div>
+                                <div class="m-item">
+                                    <h4>Reel Edit Only</h4>
+                                    <div class="m-price">₹899</div>
+                                    <p>Client provides footage, only editing service included.</p>
+                                </div>
+                                <div class="m-item">
+                                    <h4>Poster Design</h4>
+                                    <div class="m-price">₹299</div>
+                                    <p>Premium social media poster design.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Price Calculator -->
+            <section id="calculator" class="calculator section-padding">
+                <div class="container">
+                    <div class="calc-wrapper glass-premium reveal-up">
+                        <div class="calc-left">
+                            <h2 class="section-title">Project Estimator</h2>
+                            <p>Calculate the estimated cost for your upcoming project dynamically.</p>
+                            
+                            <div class="calc-form">
+                                <div class="input-group">
+                                    <label>Select Service</label>
+                                    <select id="calc-service" class="glass-input">
+                                        <option value="0">Choose...</option>
+                                        <option value="4199">Landing Page (₹4,199)</option>
+                                        <option value="10499">Website Development (₹10,499)</option>
+                                        <option value="7999">E-Commerce (₹7,999)</option>
+                                        <option value="8499">Social Media Marketing (₹8,499/mo)</option>
+                                        <option value="2599">Reel - Script + Shoot + Edit (₹2,599)</option>
+                                        <option value="899">Reel - Edit Only (₹899)</option>
+                                        <option value="299">Poster Design (₹299)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="input-group" id="qty-container" style="display:none;">
+                                    <label>Quantity</label>
+                                    <input type="number" id="calc-qty" class="glass-input" value="1" min="1">
+                                </div>
+                                
+                                <div id="calc-notice" class="notice-box" style="display:none;">
+                                    <i class="ph ph-sparkle"></i> <span>Offer applied: 2 Reels for ₹3,599!</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="calc-right">
+                            <div class="total-label">Estimated Total</div>
+                            <div class="total-amount">₹<span id="calc-total">0</span></div>
+                            <a href="#contact" class="btn btn-primary magnetic nav-anchor mt-2" data-strength="40">Discuss Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us -->
+            <section class="why-choose section-padding">
+                <div class="container">
+                    <div class="section-header reveal-up">
+                        <h2 class="section-title">The Alpha Advantage</h2>
+                    </div>
+                    
+                    <div class="adv-grid">
+                        <div class="adv-card glass-premium tilt-card reveal-up"><i class="ph ph-lightning"></i><span>Fast Delivery</span></div>
+                        <div class="adv-card glass-premium tilt-card reveal-up"><i class="ph ph-diamond"></i><span>Premium Design</span></div>
+                        <div class="adv-card glass-premium tilt-card reveal-up"><i class="ph ph-devices"></i><span>Modern UI</span></div>
+                        <div class="adv-card glass-premium tilt-card reveal-up"><i class="ph ph-wallet"></i><span>Affordable</span></div>
+                        <div class="adv-card glass-premium tilt-card reveal-up"><i class="ph ph-device-mobile"></i><span>Responsive</span></div>
+                        <div class="adv-card glass-premium tilt-card reveal-up"><i class="ph ph-handshake"></i>
+                            <span>Client-Centric Approach</span>
+                            <p class="adv-desc"></p>
+                        </div>
+                        <div class="adv-card glass-premium tilt-card reveal-up"><i class="ph ph-trend-up"></i><span>Business Growth</span></div>
+                        <div class="adv-card glass-premium tilt-card reveal-up"><i class="ph ph-headset"></i><span>Unlimited Support</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq" class="faq section-padding">
+                <div class="container">
+                    <div class="section-header reveal-up">
+                        <h2 class="section-title">Common Queries</h2>
+                    </div>
+                    
+                    <div class="faq-wrapper">
+                        
+                        <div class="faq-item glass-premium reveal-up">
+                            <div class="faq-head">
+                                <h3>How long does it take?</h3>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-body">
+                                <p>A landing page takes 1-2 weeks, while a custom website or e-commerce platform usually takes 3-6 weeks.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item glass-premium reveal-up">
+                            <div class="faq-head">
+                                <h3>Can I edit later?</h3>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-body">
+                                <p>Yes, we build scalable solutions and provide CMS options or maintenance plans to keep your site updated.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item glass-premium reveal-up">
+                            <div class="faq-head">
+                                <h3>Do you provide hosting?</h3>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-body">
+                                <p>Absolutely. We handle deployment and set you up on premium, lightning-fast servers.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item glass-premium reveal-up">
+                            <div class="faq-head">
+                                <h3>Do you redesign websites?</h3>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-body">
+                                <p>Yes, we completely revamp outdated sites into high-converting, modern digital experiences.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item glass-premium reveal-up">
+                            <div class="faq-head">
+                                <h3>Is mobile responsive included?</h3>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-body">
+                                <p>100%. Every project we build is mobile-first to ensure it looks stunning on all devices.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="contact section-padding">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-form-container glass-premium reveal-up">
+                            <h3>Send a Message</h3>
+                            <form id="contact-form" class="c-form">
+                                <div id="form-error" style="display:none; color: #ff6b6b; margin-bottom: 1rem; font-family: var(--font-subheading); font-size: 0.9rem;"></div>
+                                <div class="input-group">
+                                    <input type="text" id="contact-name" class="glass-input" placeholder="Your Name" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="contact-email" class="glass-input" placeholder="Your Email" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="number" id="contact-phone" class="glass-input" placeholder="Phone Number" required>
+                                </div>
+                                <div class="input-group">
+                                    <select id="contact-service" class="glass-input" required>
+                                        <option value="" disabled selected>Service Interested In</option>
+                                        <option value="Landing Page">Landing Page</option>
+                                        <option value="Website Development">Website Development</option>
+                                        <option value="E-Commerce Website">E-Commerce Website</option>
+                                        <option value="Social Media Marketing">Social Media Marketing</option>
+                                        <option value="Reel (Script + Shoot + Edit)">Reel (Script + Shoot + Edit)</option>
+                                        <option value="Reel (Edit Only)">Reel (Edit Only)</option>
+                                        <option value="Poster Edit">Poster Edit</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <textarea id="contact-message" class="glass-input" rows="4" placeholder="Tell us about your project..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full magnetic" data-strength="30">
+                                    <span class="btn-text">Send Inquiry</span>
+                                    <div class="btn-glow"></div>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="contact-info reveal-up">
+                            <h2 class="section-title">Let's Talk.</h2>
+                            <p class="section-subtitle">Ready to transform your digital presence?</p>
+                            
+                            <div class="c-cards">
+                                <a href="tel:7812888729" class="c-card glass-premium tilt-card magnetic" data-strength="20">
+                                    <div class="c-icon"><i class="ph ph-phone"></i></div>
+                                    <div class="c-text">
+                                        <h4>Phone</h4>
+                                        <p>7812888729</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="mailto:arockiabeniston26@gmail.com" class="c-card glass-premium tilt-card magnetic" data-strength="20">
+                                    <div class="c-icon"><i class="ph ph-envelope"></i></div>
+                                    <div class="c-text">
+                                        <h4>Email</h4>
+                                        <p>arockiabeniston26@gmail.com</p>
+                                    </div>
+                                </a>
+
+                                <a href="https://wa.me/917812888729" target="_blank" class="c-card glass-premium tilt-card magnetic" data-strength="20">
+                                    <div class="c-icon"><i class="ph ph-whatsapp-logo"></i></div>
+                                    <div class="c-text">
+                                        <h4>WhatsApp</h4>
+                                        <p>7812888729</p>
+                                    </div>
+                                </a>
+
+                                <a href="https://www.instagram.com/alpha_grow_creation?igsh=MWppMnByc2ZrM3VwYw%3D%3D" target="_blank" class="c-card glass-premium tilt-card magnetic" data-strength="20">
+                                    <div class="c-icon"><i class="ph ph-instagram-logo"></i></div>
+                                    <div class="c-text">
+                                        <h4>Instagram</h4>
+                                        <p>@alpha_grow_creation</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Floating Elements -->
+            <a href="https://wa.me/917812888729" target="_blank" class="floating-btn float-wa magnetic" data-strength="40">
+                <i class="ph-fill ph-whatsapp-logo"></i>
+            </a>
+            
+            <a href="#home" class="floating-btn float-up magnetic nav-anchor" data-strength="40">
+                <i class="ph ph-caret-up"></i>
+            </a>
+
+            <!-- Ultra Premium Footer (Modified for Social Icons) -->
+            <footer class="footer">
+                <div class="footer-gradient-line"></div>
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="f-brand reveal-up">
+                            <div class="f-brand-title">
+                                <img src="assets/logo.png" alt="Alpha_Grow_Creation Logo" class="f-logo" onerror="this.style.display='none';">
+                                <h2>Alpha_Grow_Creation</h2>
+                            </div>
+                            <p>We Build Websites That Grow Businesses</p>
+                            
+                            <!-- Premium Social Icons -->
+                            <div class="premium-social-icons">
+                                <a href="https://www.instagram.com/alpha_grow_creation?igsh=MWppMnByc2ZrM3VwYw==" target="_blank" class="social-icon-btn magnetic" data-strength="30">
+                                    <i class="ph ph-instagram-logo"></i>
+                                    <div class="icon-glow"></div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/arockiabeniston/" target="_blank" class="social-icon-btn magnetic" data-strength="30">
+                                    <i class="ph ph-linkedin-logo"></i>
+                                    <div class="icon-glow"></div>
+                                </a>
+                                <a href="https://github.com/arockiabeniston07" target="_blank" class="social-icon-btn magnetic" data-strength="30">
+                                    <i class="ph ph-github-logo"></i>
+                                    <div class="icon-glow"></div>
+                                </a>
+                                <a href="https://portfolio-benzzz.netlify.app/" target="_blank" class="social-icon-btn magnetic" data-strength="30">
+                                    <i class="ph ph-user"></i>
+                                    <div class="icon-glow"></div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="f-links reveal-up" style="transition-delay: 0.1s;">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#home" class="magnetic nav-anchor" data-strength="10">Home</a></li>
+                                <li><a href="#services" class="magnetic nav-anchor" data-strength="10">Services</a></li>
+                                <li><a href="#portfolio" class="magnetic nav-anchor" data-strength="10">Portfolio</a></li>
+                                <li><a href="#pricing" class="magnetic nav-anchor" data-strength="10">Pricing</a></li>
+                                <li><a href="#calculator" class="magnetic nav-anchor" data-strength="10">Calculator</a></li>
+                                <li><a href="#faq" class="magnetic nav-anchor" data-strength="10">FAQ</a></li>
+                                <li><a href="#contact" class="magnetic nav-anchor" data-strength="10">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="f-links reveal-up" style="transition-delay: 0.2s;">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#services" class="magnetic nav-anchor" data-strength="10">Website Development</a></li>
+                                <li><a href="#services" class="magnetic nav-anchor" data-strength="10">Landing Pages</a></li>
+                                <li><a href="#services" class="magnetic nav-anchor" data-strength="10">E-Commerce</a></li>
+                                <li><a href="#services" class="magnetic nav-anchor" data-strength="10">Social Media Marketing</a></li>
+                                <li><a href="#services" class="magnetic nav-anchor" data-strength="10">Logo Design</a></li>
+                                <li><a href="#services" class="magnetic nav-anchor" data-strength="10">Reels Editing</a></li>
+                                <li><a href="#services" class="magnetic nav-anchor" data-strength="10">Poster Editing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="f-social reveal-up" style="transition-delay: 0.3s;">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="tel:7812888729" class="magnetic" data-strength="10"><i class="ph ph-phone"></i> 7812888729</a></li>
+                                <li><a href="mailto:arockiabeniston26@gmail.com" class="magnetic" data-strength="10"><i class="ph ph-envelope"></i> arockiabeniston26@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 Alpha_Grow_Creation. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div> <!-- End smooth-content -->
+    </div> <!-- End smooth-wrapper -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
+    <!-- Fallback if SplitText is Club GreenSock, we will use a custom vanilla implementation in script.js to be safe -->
+    
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
