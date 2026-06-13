@@ -894,19 +894,14 @@ body.loading {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    align-items: start;
 }
 
 .port-item {
     padding: 1rem;
 }
 
-.span-full {
-    grid-column: 1 / -1;
-}
-
-.span-full .port-img-wrap {
-    height: 500px;
-}
+/* span-full removed — all cards are uniform */
 
 .port-img-wrap {
     width: 100%;
@@ -1610,7 +1605,6 @@ body.loading {
 
     /* Portfolio */
     .portfolio-masonry { grid-template-columns: 1fr; }
-    .span-full .port-img-wrap { height: 350px; }
 
     /* Calculator */
     .calc-wrapper { grid-template-columns: 1fr; padding: 2rem; }
@@ -1704,7 +1698,6 @@ body.loading {
 
     /* ---- PORTFOLIO ---- */
     .portfolio-masonry { grid-template-columns: 1fr; gap: 1.5rem; }
-    .span-full .port-img-wrap { height: 260px; }
     .port-img-wrap { height: 260px; }
     .port-info h3 { font-size: 1.4rem; }
 
@@ -1766,7 +1759,6 @@ body.loading {
     .adv-grid { grid-template-columns: 1fr; }
 
     .port-img-wrap { height: 220px; }
-    .span-full .port-img-wrap { height: 220px; }
     .port-info h3 { font-size: 1.2rem; }
 
     .pricing-grid { gap: 1.2rem; }
@@ -1795,7 +1787,6 @@ body.loading {
     .hero-cta-group .btn { font-size: 0.85rem; padding: 0.8rem 1.5rem; }
     .adv-grid { grid-template-columns: 1fr; }
     .port-img-wrap { height: 200px; }
-    .span-full .port-img-wrap { height: 200px; }
     .price-card { padding: 1.5rem 1rem; }
     .pr-amt { font-size: 1.6rem; }
     .total-amount { font-size: 2.2rem; }
