@@ -193,7 +193,7 @@ mainIntroTl
 .to(".hero-desc", { opacity: 1, y: 0, duration: 1, ease: "power3.out" }, "-=0.7")
 .to(".hero-cta-group", { opacity: 1, y: 0, duration: 1, ease: "power3.out" }, "-=0.5")
 .to(".hero-visuals", { opacity: 1, y: 0, duration: 1, ease: "power3.out" }, "-=0.5")
-.to(".scroll-down-indicator", { opacity: 1, duration: 1 }, "-=0.5");
+
 
 // Play loader
 mainIntroTl.play();
