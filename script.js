@@ -370,7 +370,7 @@ function updateCalculator() {
         total = 0;
     } else {
         // Single unit services (no quantity selector)
-        if ([4199, 10499, 7999, 8499].includes(serviceValue)) {
+        if ([4199, 6999, 7999, 8499].includes(serviceValue)) {
             qtyContainer.style.display = 'none';
             total = serviceValue;
         } else {
